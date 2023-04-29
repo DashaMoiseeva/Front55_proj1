@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+    
+    @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+        img{
+           float: right;
+        }
+        
+        h1{
+            font-family: 'Russo One', sans-serif;
+            font-size: 50px;
+            text-align: left;  
+        }
+        h2{
+            font-family: 'Yeseva One', cursive;
+            font-size: 20px;
+            text-align: left;  
+        }
+
+        h3{
+            font-family: 'Lora', Georgia, times, serif;
+            font-size: 35px;
+            text-align: left; 
+            
+        }
+
+        p{
+            font-family: 'Lora', Georgia, times, serif;
+            font-size: 25px;
+            text-align: left;  
+        }
+        label{
+            font-weight: 45px;
+            padding-left: 25px;
+            padding-bottom: 0px;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://papik.pro/uploads/posts/2022-01/thumbs/1642320651_49-papik-pro-p-zoopark-klipart-52.png" alt=""  width="30%">
+    <h1>Форма заявки на работу в зоопарк</h1>
+    <h2> <i> Пожалуйста, заполните форму. Обязательные поля помечены <i style="color: red;">*</i></i></h2>
+    
+<hr>
+<br>
+
+<h3>Контактная информация</h3> 
+<form action="server1.php">
+
+<p> Имя<b style="color: red;">*</b>:
+    <label>
+        <input type="text" size="40" placeholder="Введите имя" required name="userName" autofocus>
+    </label>
+</p>
+
+<p> Телефон:
+    <label>
+        <input type="tel" size="40" name="userTel" autofocus>
+    </label>
+</p>
+
+<p> Email<b style="color: red;">*</b>:
+    <label>
+        <input type="email" size="40" placeholder="Введите email" required name="userEmail" autofocus>
+    </label>
+</p>
+
+
+<br>
+<hr>
+<h3>Персональная информация</h3> 
+
+
+    <p> Возраст<b style="color: red;">*</b>:
+        <label>
+            <input type="tel" size="40" name="userLet" autofocus>
+        </label>
+    </p>
+    
+    <p> Пол:
+        <select name="userPol">
+            <option value="0">Женщина</option>
+            <option value="1">Мужчина</option>
+        </select>
+    </p>
+    
+    <p> Перечислите личные <br> данные:
+       <br> <textarea name="userInf" cols="30" rows="10"></textarea>
+    </p>
+    
+    <br>
+    <hr>
+
+    <h3>Выберите ваших любимых животных:</h3> 
+ 
+    
+        <p>
+            <label>
+                <input type="checkbox" name="userAnim1">Зебра
+            </label>
+            <label>
+                <input type="checkbox" name="userAnim2">Кошка
+            </label>
+            <label>
+                <input type="checkbox" name="userAnim3">Анаконда
+            </label>
+            <label>
+                <input type="checkbox" name="userAnim4">Человек
+            </label>
+            <label>
+               <br><br> <input type="checkbox" name="userAnim5">Слон
+            </label>
+            <label>
+                <input type="checkbox" name="userAnim6">Антилопа
+            </label>
+            <label>
+                <input type="checkbox" name="userAnim7">Голубь
+            </label>
+            <label>
+                <input type="checkbox" name="userAnim8">Краб
+            </label>
+            
+        </p>
+        <br>
+        <hr>
+        <p><input type="submit" value="Отправить" size="20"></p>
+        </form>
+
+</body>
+</html>
